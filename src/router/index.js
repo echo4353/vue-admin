@@ -7,6 +7,10 @@ const publicRoutes = [
     path: '/login',
     name: 'login',
     component: () => import('@/views/login/index.vue')
+  },
+  {
+    path: '/',
+    component: () => import('@/layout/index.vue')
   }
 ]
 

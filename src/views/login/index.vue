@@ -105,16 +105,15 @@ const handleLogin = () => {
   loginFromRef.value.validate((valid) => {
     if (!valid) return
     loading.value = true
-    store
-      .dispatch('user/login', loginForm.value)
-      .then(() => {
-        loading.value = false
-        // TODO: 登录后操作
-      })
-      .catch((err) => {
-        console.log(err)
-        loading.value = false
-      })
+    store.dispatch('user/login', loginForm.value)
+    // .then(() => {
+    //   loading.value = false
+    //   // TODO: 登录后操作
+    // })
+    // .catch((err) => {
+    //   console.log(err)
+    //   loading.value = false
+    // })
   })
 }
 </script>
