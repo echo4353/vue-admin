@@ -1,11 +1,12 @@
 <template>
-  <div class="">
+  <div>
     <div class="logo-container">
       <el-avatar
         :size="logoHeight"
         shape="square"
-        src="https://m.imooc.com/static/wap/static/common/img/logo-small@2x.png"
+        src="https://img.36dianping.com/20230103/v2_f143a7773e0c4c2c91152555f403045c_img_000"
       />
+      <!-- src="https://m.imooc.com/static/wap/static/common/img/logo-small@2x.png" -->
       <h1 class="logo-title" v-if="$store.getters.sidebarOpened">
         imooc-admin
       </h1>

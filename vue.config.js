@@ -43,5 +43,12 @@ module.exports = defineConfig({
         symbolId: 'icon-[name]'
       })
       .end()
+    //新增规则，处理 element-plus2 错误
+    config.module
+      .rule('element-plus2')
+      .test(/\.mjs$/)
+      .type('javascript/auto')
+      .include.add(/node_modules/)
+      .end()
   }
 })

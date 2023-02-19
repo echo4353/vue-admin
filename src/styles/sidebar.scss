@@ -54,7 +54,11 @@
     .svg-icon {
       margin-right: 16px;
     }
-
+    .el-menu--collapse {
+      .svg-icon {
+        margin-right: 0px;
+      }
+    }
     .sub-el-icon {
       margin-right: 12px;
       margin-left: -2px;
