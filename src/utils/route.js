@@ -9,6 +9,7 @@ const getChildrenRoutes = (routes) => {
       result.push(...route.children)
     }
   })
+
   return result
 }
 /**
@@ -38,11 +39,11 @@ function isNull(data) {
  */
 export function generateMenus(routes, basePath = '') {
   const result = []
-  // 遍历路由表
+  // 遍历路由表,不满足该条件 `meta && meta.title && tmeta.icon` 的数据不应该存在
   routes.forEach((item) => {
     // 不存在 children && 不存在 meta 直接 return
     if (isNull(item.meta) && isNull(item.children)) return
-    // 存在 children 不存在 meta，进入迭代
+    // 存在 children 不存在 meta，迭代generateMenus
     if (isNull(item.meta) && !isNull(item.children)) {
       result.push(...generateMenus(item.children))
       return

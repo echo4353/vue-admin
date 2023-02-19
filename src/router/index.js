@@ -87,8 +87,7 @@ export const privateRoutes = [
         name: 'articleDetail',
         component: () => import('@/views/article-detail/index'),
         meta: {
-          title: 'articleDetail',
-          icon: 'article'
+          title: 'articleDetail'
         }
       },
       {
@@ -105,8 +104,7 @@ export const privateRoutes = [
         name: 'articleEditor',
         component: () => import('@/views/article-editor/index'),
         meta: {
-          title: 'articleEditor',
-          icon: 'article'
+          title: 'articleEditor'
         }
       }
     ]

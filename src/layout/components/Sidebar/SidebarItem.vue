@@ -13,11 +13,7 @@
   </el-sub-menu>
   <!-- 渲染 item 项 -->
   <el-menu-item v-else :index="route.path">
-    <menu-item
-      :title="route.meta.title"
-      :icon="route.meta.icon"
-      :iconName="route.meta.iconName"
-    ></menu-item>
+    <menu-item :title="route.meta.title" :icon="route.meta.icon"></menu-item>
   </el-menu-item>
 </template>
 

@@ -66,7 +66,6 @@ service.interceptors.response.use(
  * @param {*} options 请求配置
  */
 function request(options) {
-  console.error(options, 'options')
   options.method = options.method || 'get'
   if (options.method.toLowerCase() === 'get') {
     options.params = options.data
