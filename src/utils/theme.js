@@ -1,6 +1,6 @@
-// import color from 'css-color-function'
-// import rgbHex from 'rgb-hex'
-// import formula from '@/constant/formula.json'
+import color from 'css-color-function'
+import rgbHex from 'rgb-hex'
+import formula from '@/constant/formula.json'
 import axios from 'axios'
 /**
  * 写入新样式到 style
