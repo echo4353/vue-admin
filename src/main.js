@@ -5,6 +5,7 @@ import store from './store'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import './config'
+import i18n from '@/i18n'
 // ElementPlusIconsVue注册
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
@@ -20,4 +21,5 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 }
 installIcons(app)
 app.use(ElementPlus)
+app.use(i18n)
 app.use(store).use(router).mount('#app')
