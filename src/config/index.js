@@ -3,7 +3,6 @@
  */
 
 const env = process.env.NODE_ENV || 'prod'
-console.log(env, 'envenvenv')
 const EnvConfig = {
   dev: {
     baseApi: '/api',

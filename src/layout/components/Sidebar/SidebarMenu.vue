@@ -26,10 +26,8 @@ import SidebarItem from './SidebarItem.vue'
 const router = useRouter()
 const routes = computed(() => {
   const filterRoutes = filterRouters(router.getRoutes())
-  console.log(filterRoutes, 'filterRoutes')
   return generateMenus(filterRoutes)
 })
-console.log(routes.value)
 // 计算高亮 menu 的方法
 const route = useRoute()
 const activeMenu = computed(() => {
