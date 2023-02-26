@@ -14,7 +14,7 @@
         <!-- 顶部的 navbar -->
         <navbar />
         <!-- tags -->
-        <!-- <tags-view id="guide-tags"></tags-view> -->
+        <tags-view id="guide-tags"></tags-view>
       </div>
       <!-- 内容区 -->
       <app-main />
@@ -26,7 +26,7 @@
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import AppMain from './components/AppMain'
-// import TagsView from '@/components/TagsView'
+import TagsView from '@/components/TagsView'
 </script>
 
 <style lang="scss" scoped>
